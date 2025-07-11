@@ -16,7 +16,6 @@ def Auth(user,password,route = route):
         "username": user,
         "password": password,
         "client_id":2,
-        "client_secret":"wWEI9VQskScwjWhgRH6cgDqG0tw2G7GEqpKPQJj2",
         "grant_type":"password"
     }
     
@@ -32,8 +31,8 @@ def point(Token,dia):
     headers = {"Authorization": f"Bearer {Token}", "Content-Type": "application/json"}
     data = {
           f"datetime_event":{dia},
-          "geolocation":"-19.9213662,-43.9347277" ,
-          "browserGeolocation":"-19.9213662,-43.9347277",
+          "geolocation":"-19.9290564 -43.931904" ,
+          "browserGeolocation":"-19.9290564 -43.931904",
           "workplace_id":5620,
           "timecard_hour_type_id":2}
     response = requests.post(url, json=data, headers=headers)

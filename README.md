@@ -78,7 +78,6 @@ python Frontend.py
 ## 🔐 Segurança
 
 - A autenticação é feita com `grant_type=password`
-- O `client_id` e `client_secret` estão fixos no código (evite isso em produção)
 - O token de acesso é usado para enviar dados ao endpoint `/api/mobile/time/cards`
 
 ---
@@ -88,8 +87,6 @@ python Frontend.py
 Você pode alterar os seguintes itens conforme seu ambiente:
 
 - `Route` → no `.env`
-- `client_id`, `client_secret` → em `backend.py`
-- `workplace_id`, `timecard_hour_type_id`, `geolocation` → em `point()`
 
 ---
 
